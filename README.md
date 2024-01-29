@@ -1,7 +1,7 @@
 # JavaScript-Essentials
 important items being undertaken in the classroom lectures. Along with Day-wise notes
 
-DAY-1/NOTES
+DAY-1/NOTES-29/01/2024
 JAVASCRIPT
 
 =>dynamically loosely type language
