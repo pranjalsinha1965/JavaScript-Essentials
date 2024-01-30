@@ -43,19 +43,29 @@ Basic definition of JavaScript
 Day2/30th January, 2024
 JavaScript
 =>In the old, pre-ES6 era of JavaScript, developers used to declare variables using the keyword var or without any keywords. But times have changed!
+
 =>With ES6 (EcmaScript 2015), the beginning of the modern era in JavaScript, the language got two new keywords to help us declare variables. These are let and const.
+
 =>So, what is a block? A block (that is, a code block) is a section of the code we define using a pair of curly brace s({...}). Something like this:
+
 Example:
 {
   let name = "alex";
 }
+
 =>Usually, you define a function using the function keyword and a name. Just be aware that you can define a function without a name, which we call an anonymous function.
+
 =>Anything and everything outside of a block or a function we'll call Global. So, when we declare variables, they can exist within a block, inside a function, or outside of a block/function – that is, they have global scope.
+
 =>There are mainly three type of scopes : (i) Global Scope (ii) Block Scope (iii)Functional Scope
+
 =>As you see, the value of the age variable may get overridden unknowingly and eventually introduce a bug. So, the moral of the story is,
 Do not use the var keyword inside a block (block scope). Always use let and const instead.
+
 =>A variable declared inside a function using these keywords is not accessible outside the function. That's the applied functional scope.
+
 =>The variable declared with var inside a function is not accessible outside of it. The keyword var has function-scope.
+
 =>So, to restrict the scope of a variable using the var, let, and const keywords, here's the order of accessibility in scope starting with the lowest:
 
 var: The functional scope level
