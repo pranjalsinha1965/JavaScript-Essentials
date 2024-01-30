@@ -40,8 +40,41 @@ Basic definition of JavaScript
 
 => compiler translates the entire source code into machine code before execution, resulting in faster execution since no translation is needed during runtime. On the other hand, an interpreter translates code line by line during execution, making it easier to detect errors but potentially slowing down the program.
 
+Day2/30th January, 2024
+JavaScript
+=>In the old, pre-ES6 era of JavaScript, developers used to declare variables using the keyword var or without any keywords. But times have changed!
+=>With ES6 (EcmaScript 2015), the beginning of the modern era in JavaScript, the language got two new keywords to help us declare variables. These are let and const.
+=>So, what is a block? A block (that is, a code block) is a section of the code we define using a pair of curly brace s({...}). Something like this:
+Example:
+{
+  let name = "alex";
+}
+=>Usually, you define a function using the function keyword and a name. Just be aware that you can define a function without a name, which we call an anonymous function.
+=>Anything and everything outside of a block or a function we'll call Global. So, when we declare variables, they can exist within a block, inside a function, or outside of a block/function – that is, they have global scope.
+=>There are mainly three type of scopes : (i) Global Scope (ii) Block Scope (iii)Functional Scope
+=>As you see, the value of the age variable may get overridden unknowingly and eventually introduce a bug. So, the moral of the story is,
+Do not use the var keyword inside a block (block scope). Always use let and const instead.
+=>A variable declared inside a function using these keywords is not accessible outside the function. That's the applied functional scope.
+=>The variable declared with var inside a function is not accessible outside of it. The keyword var has function-scope.
+=>So, to restrict the scope of a variable using the var, let, and const keywords, here's the order of accessibility in scope starting with the lowest:
 
+var: The functional scope level
+let: The block scope level
+const: The block scope level
 
+![image](https://github.com/pranjalsinha1965/JavaScript-Essentials/assets/87580655/326e5b42-f9b7-49f0-9bb7-b12cad1f87f3)
+
+![image](https://github.com/pranjalsinha1965/JavaScript-Essentials/assets/87580655/c9327e02-389d-4493-8ab3-3ea60514feba)
+
+![image](https://github.com/pranjalsinha1965/JavaScript-Essentials/assets/87580655/91aae9a3-1b36-4918-89bb-bac9302cf057)
+
+With var in non-strict mode, the variable will have an undefined value. This means that a variable has been declared but has no value assigned.
+In strict mode, you will get a ReferenceError that the variable is not declared.
+With let and const, if you try to access a variable before declaring, you will always get a ReferenceError.
+
+Don't use var anymore.
+Use let or const.
+Use const more often. Use let when you need to reassign another value to a variable.
 
 
 
