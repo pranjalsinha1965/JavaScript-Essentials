@@ -26,3 +26,10 @@ This repository contains essential notes and insights from classroom lectures fo
 - **Recommendation:** Avoid 'var'; prefer 'let' or 'const'. Prioritize 'const' unless variable reassignment is necessary.
 
 **Note:** Always declare variables with 'let' or 'const' to ensure better code quality and avoid unexpected behaviors.
+
+<p align="center">
+  <img src="https://www.freecodecamp.org/news/content/images/size/w1000/2022/01/28.png" width="250" alt="Image 1">
+  <img src="https://www.freecodecamp.org/news/content/images/size/w1000/2022/01/29-1.png" width="250" alt="Image 2">
+  <img src="https://www.freecodecamp.org/news/content/images/size/w1000/2022/01/30.png" width="250" alt="Image 3">
+</p>
+
