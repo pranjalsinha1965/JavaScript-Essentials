@@ -38,6 +38,8 @@ Basic definition of JavaScript
 
 =>Babel is a popular tool for React development, as React uses many of the latest JavaScript features. Babel can also be used to convert JavaScript code to a version that is compatible with Node.js.
 
+=> compiler translates the entire source code into machine code before execution, resulting in faster execution since no translation is needed during runtime. On the other hand, an interpreter translates code line by line during execution, making it easier to detect errors but potentially slowing down the program.
+
 
 
 
