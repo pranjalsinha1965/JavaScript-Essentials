@@ -1,7 +1,5 @@
 # JavaScript Essentials
 
-# JavaScript Essentials
-
 ## Introduction
 This repository contains essential notes and insights from classroom lectures focusing on JavaScript. The provided day-wise notes aim to cover key concepts and practices to enhance your understanding of JavaScript, a dynamic and loosely-typed scripting language.
 
