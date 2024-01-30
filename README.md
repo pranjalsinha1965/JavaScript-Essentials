@@ -1,91 +1,28 @@
-# JavaScript-Essentials
-important items being undertaken in the classroom lectures. Along with Day-wise notes
+# JavaScript Essentials
 
-DAY-1/NOTES-29/01/2024
-JAVASCRIPT
+# JavaScript Essentials
 
-=>dynamically loosely type language
-=>to add functionality to any web page or any site 
-=>Scripting and compiling language
+## Introduction
+This repository contains essential notes and insights from classroom lectures focusing on JavaScript. The provided day-wise notes aim to cover key concepts and practices to enhance your understanding of JavaScript, a dynamic and loosely-typed scripting language.
 
-=>output engines of different web browsers
-From sources across the web
-1. Chakra
-2. V8
-3. JavaScriptCore
-4. Spidermonkey
-5. Firefox
-6. Chromium
-7. Inscript
-8. Jsbin
-9. NativeScript
+## Day 1 - JavaScript Fundamentals (29/01/2024)
+- **JavaScript:** Dynamically loosely-typed language for adding functionality to web pages or sites. It is both a scripting and compiling language.
+- **Output Engines:** Chakra, V8, JavaScriptCore, Spidermonkey, Firefox, Chromium, Inscript, Jsbin, NativeScript.
+- **Basic Definition:** JavaScript facilitates the implementation of complex features on web pages, enabling dynamic content updates, interactive maps, animations, and more.
+- **Variable Types:** JavaScript automatically types variables based on the supplied information. Weakly typed examples include JavaScript, PHP, Perl, and C, while strongly typed examples include Python, Ruby, C#, and Java.
+- **ECMAScript:** A scripting language specification standardized by W3C, originally released by ECMA in 1997.
+- **Backward Compatibility:** Design compatible with previous versions; forward compatibility anticipates compatibility with future versions.
+- **Babel:** A JavaScript compiler converting code to older versions, essential for utilizing the latest features while ensuring compatibility.
 
+## Day 2 - Modern JavaScript (30/01/2024)
+- **ES6 (EcmaScript 2015):** Introduces 'let' and 'const' as new keywords for variable declaration.
+- **Block Scope:** Defined using curly braces ({...}). Functions and variables within blocks are considered block-scoped.
+- **Global Scope:** Variables declared outside blocks or functions are global.
+- **Scopes:** Global, Block, and Functional scopes.
+- **Best Practices:** Avoid using 'var' inside a block; use 'let' and 'const' for block scope to prevent unintended variable overrides.
+- **Functional Scope:** Variables declared inside a function are not accessible outside it.
+- **Order of Accessibility:** var (functional scope) < let (block scope) < const (block scope).
+- **Error Handling:** 'var' in non-strict mode results in undefined values; 'let' and 'const' in strict mode generate ReferenceErrors.
+- **Recommendation:** Avoid 'var'; prefer 'let' or 'const'. Prioritize 'const' unless variable reassignment is necessary.
 
-Basic definition of JavaScript
-1. JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, ...
-
-=>Depending on the information you supply to a variable (such as this ‘ ‘ or " " to signify string values), JavaScript will automatically type it. The type of a variable, such as int, float, boolean, or String, must be declared in many other languages, including Java.
-
-=>Some examples of weakly typed languages include JavaScript, PHP, Perl, and C. Some examples of strongly typed languages include Python, Ruby, C#, and Java. 
-
-=>In computer programming, a language is strongly typed if it requires the specification of data types. A language is loosely typed, or weakly typed, when it does not require the explicit specification of different types of objects and variables. 
-
-=>ECMAScript is a scripting-language specification created by the European Computer Manufacturers Association (ECMA). It was first released in 1997 as ECMA-262. The specification was later adopted by the World Wide Web Consortium (W3C) and standardized as a scripting language for web applications.2 Feb 2023
-
-=>Backward compatibility is a design that is compatible with previous versions of itself. Forward compatibility is a design that is compatible with future versions of itself. Backward and forward compatibility protects your investments in: Hardware.
-
-=>Babel is a JavaScript compiler that can convert JavaScript code written using the latest features to older versions of JavaScript. This allows developers to use the latest JavaScript features without having to worry about whether or not their code will work in older browsers.
-
-=>Babel is a popular tool for React development, as React uses many of the latest JavaScript features. Babel can also be used to convert JavaScript code to a version that is compatible with Node.js.
-
-=> compiler translates the entire source code into machine code before execution, resulting in faster execution since no translation is needed during runtime. On the other hand, an interpreter translates code line by line during execution, making it easier to detect errors but potentially slowing down the program.
-
-Day2/30th January, 2024
-JavaScript
-=>In the old, pre-ES6 era of JavaScript, developers used to declare variables using the keyword var or without any keywords. But times have changed!
-
-=>With ES6 (EcmaScript 2015), the beginning of the modern era in JavaScript, the language got two new keywords to help us declare variables. These are let and const.
-
-=>So, what is a block? A block (that is, a code block) is a section of the code we define using a pair of curly brace s({...}). Something like this:
-
-Example:
-{
-  let name = "alex";
-}
-
-=>Usually, you define a function using the function keyword and a name. Just be aware that you can define a function without a name, which we call an anonymous function.
-
-=>Anything and everything outside of a block or a function we'll call Global. So, when we declare variables, they can exist within a block, inside a function, or outside of a block/function – that is, they have global scope.
-
-=>There are mainly three type of scopes : (i) Global Scope (ii) Block Scope (iii)Functional Scope
-
-=>As you see, the value of the age variable may get overridden unknowingly and eventually introduce a bug. So, the moral of the story is,
-Do not use the var keyword inside a block (block scope). Always use let and const instead.
-
-=>A variable declared inside a function using these keywords is not accessible outside the function. That's the applied functional scope.
-
-=>The variable declared with var inside a function is not accessible outside of it. The keyword var has function-scope.
-
-=>So, to restrict the scope of a variable using the var, let, and const keywords, here's the order of accessibility in scope starting with the lowest:
-
-var: The functional scope level
-let: The block scope level
-const: The block scope level
-
-![image](https://github.com/pranjalsinha1965/JavaScript-Essentials/assets/87580655/326e5b42-f9b7-49f0-9bb7-b12cad1f87f3)
-
-![image](https://github.com/pranjalsinha1965/JavaScript-Essentials/assets/87580655/c9327e02-389d-4493-8ab3-3ea60514feba)
-
-![image](https://github.com/pranjalsinha1965/JavaScript-Essentials/assets/87580655/91aae9a3-1b36-4918-89bb-bac9302cf057)
-
-With var in non-strict mode, the variable will have an undefined value. This means that a variable has been declared but has no value assigned.
-In strict mode, you will get a ReferenceError that the variable is not declared.
-With let and const, if you try to access a variable before declaring, you will always get a ReferenceError.
-
-Don't use var anymore.
-Use let or const.
-Use const more often. Use let when you need to reassign another value to a variable.
-
-
-
-
+**Note:** Always declare variables with 'let' or 'const' to ensure better code quality and avoid unexpected behaviors.
